@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Five</title>
+
+    <style>
+        table, td {
+        border: 1px solid black;
+        padding: 10px;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #see1, #see2, #see3, #see4{
+        display: none;
+    }
+
+    #see1:target {
+        display: block;
+    }
+
+    #see2:target {
+        display: block;
+    }
+
+    #see3:target {
+        display: block;
+    }
+
+    #see4:target {
+        display: block;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">TABLE</h1>
+    <table>
+        <tr>
+            <td colspan="3"></td>
+        </tr>
+
+        <tr>
+            <td><a href="#see1" target="_parent">Computer Fundamentals</a></td>
+
+            <td rowspan="4"><iframe id="see1" src="comF.html" width="500" height="450"></iframe>
+                            <iframe id="see2" src="commS.html" width="500" height="450"></iframe>
+                            <iframe id="see3" src="langC.html" width="500" height="450"></iframe>
+                            <iframe id="see4" src="htmlNet.html" width="500" height="450"></iframe>
+            </td>
+
+            <td rowspan="4"><marquee>COMPUTER FUNDAMENTALS</marquee></td>
+        </tr>
+
+        <tr>
+            <td><a href="#see2" target="_parent">Communication Skills</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="#see3" target="_parent">Language C</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="#see4" target="_parent">HTML and Networking</a></td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
